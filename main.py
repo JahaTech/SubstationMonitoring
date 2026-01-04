@@ -18,8 +18,3 @@ st.sidebar.button("SE3xxKP-x4")
 st.sidebar.button("SE3xxKP-x5")
 st.sidebar.button("SE3xxKP-x6")
 st.sidebar.button("SE3xxKP-x7")
-
-
-
-
-def exibir():
