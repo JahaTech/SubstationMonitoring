@@ -2,14 +2,6 @@
 import streamlit as st
 import pandas as pd
 from streamlit import columns
-#import paho.mqtt.subscribe as subscribe
-
-# Funções
-'''def exibir(topic):
-    msg = subscribe.simple(topic, hostname="broker.emqx.io")
-    value = int(msg.payload)
-    return value
-'''
 
 # -- Titulo do Dashboard
 st.title("DashBoard - :rainbow[VALE]")
@@ -25,10 +17,10 @@ if st.sidebar.button("SE311KP-D"):
 if st.sidebar.button("SE311KP-E"):
     pass
 if st.sidebar.button("SE311KP-F"):
-    VV07 = 21
-    VV08 = 19
-    st.text("Temperatura VV07: "+str(VV07)+"ºC")
-    st.text("Temperatura VV08: "+str(VV08)+"ºC")
+    VV07 = random.randint(18,26)
+    VV08 = random.randint(18,26)
+    st.text(["Temperatura VV07: "+str(VV07)+"ºC"],
+            ["Temperatura VV08: "+str(VV08)+"ºC"])
     st.bar_chart({"VV07": VV07, "VV08": VV08},color="#ff2c2c")
 
 # --------
