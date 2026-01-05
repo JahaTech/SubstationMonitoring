@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 from streamlit import columns
-import paho.mqtt.subscribe as subscribe
+#import paho.mqtt.subscribe as subscribe
 
 # Funções
 def exibir(topic):
