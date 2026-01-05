@@ -5,10 +5,11 @@ from streamlit import columns
 #import paho.mqtt.subscribe as subscribe
 
 # Funções
-def exibir(topic):
+'''def exibir(topic):
     msg = subscribe.simple(topic, hostname="broker.emqx.io")
     value = int(msg.payload)
     return value
+'''
 
 # -- Titulo do Dashboard
 st.title("DashBoard - :rainbow[VALE]")
