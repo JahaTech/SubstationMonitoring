@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 from streamlit import columns
+import random
 
 # -- Titulo do Dashboard
 st.title("DashBoard - :rainbow[VALE]")
@@ -19,8 +20,7 @@ if st.sidebar.button("SE311KP-E"):
 if st.sidebar.button("SE311KP-F"):
     VV07 = random.randint(18,26)
     VV08 = random.randint(18,26)
-    st.text(["Temperatura VV07: "+str(VV07)+"ºC"],
-            ["Temperatura VV08: "+str(VV08)+"ºC"])
+    st.write("Temperatura VV07: " + str(VV07) + "ºC\n","\nTemperatura VV08: " + str(VV08) + "ºC")
     st.bar_chart({"VV07": VV07, "VV08": VV08},color="#ff2c2c")
 
 # --------
